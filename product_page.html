@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="Navbar">
+            <div class="menu">
+                <div class="logo">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo">
+                    <p class="brand-name">Kafene</p>
+                </div>
+                <nav>
+                    <a class="menu-item" href="./order-page.html">Orders</a>
+                    <a class="menu-item" href="product_page.html">Products</a>
+                    <a class="menu-item" href="./User-page.html">Users</a>
+                </nav>
+                <a class="logout" href="./login_page.html" >Logout</a>
+            </div>
+    
+        </div>
+        <div class="container">
+            <div class="order-page">
+                <h1 class="order-title">Products</h1>
+                <div class="order-wrapper">
+                    <div class="filter-wrapper">
+                        <h3>Filters</h3>
+                        <div class="filter-option">
+                            <p>Count : </p>
+                            <label class="filter-checkbox" class="active">
+                                <input type="checkbox"   id="expired" name="expired"  onclick="checkMe()" checked>Expird
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" id="low-stock" name="low-stock" onclick="check()" checked>Low Stock
+                            </label>
+                            
+                        </div>
+                    </div>
+                    <div >
+                        <table class="product-table">
+                            <tr>
+                                <th>ID</th>
+                                <th>Product Name</th>
+                                <th>Product Brand</th>
+                                <th>Expiry Date</th>
+                                <th>Unit Price</th>
+                                <th>Stock</th>
+                            </tr>
+                            <tbody id="product-data" class="product">
+                               <!--- <tr class="order-row">
+                                    <td class="second-text">714-69-5617</td>
+                                    <td class="primary-text">Sally Whebell</td>
+                                    <td class="primary-text">07 Aug, 2020<br>
+                                    <span class="second-text">2:29 AM</span></td>
+                                    <td class="second-text">$634.2</td>
+                                    <td class="primary-text">Delivered</td>
+                                    <td class="primary-text">Delivered</td>
+                                </tr>---->
+                        
+                            </tbody>
+                        </table> 
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+    <script src="./product.-page.js"></script>
+</body>
+</html>
